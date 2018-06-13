@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="note.js"></script>
+    </head>
+    <body >
+        <div id="mar">
+        <div id="container">
+
+            <p id="header">WELCOME TO YOUR TODO LIST</p>
+
+        </div>  
+        <div class="clr"></div>
+        <div id="panal">
+            <nav class="menu">
+            <ul id="ull"> 
+                <li id="a"><a href="#a" class="ll">Home</a> </li>
+                <li id="b"><a href="#b" class="ll">Apps</a>
+                
+                <div>
+                  <hr>  <strong>Goto List : </strong><a href="#">Goto List</a>
+                </div>
+                
+                </li>
+                <li id="c"><a href="#c" class="ll">Contact</a>
+                
+                    <div>
+                      <hr>  <strong>Email: </strong><a href="#">jaygupta742@outlook.com</a>
+                    </div>
+
+                </li>
+                <li id="d"><a href="#d" class="ll">Developer</a>
+                
+                    <div>
+                        <hr><strong>Developer : </strong><a href="#">Jay Gupta</a>
+                    </div>
+                
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="clr">
+        <div id="container2">
+            <div class="clr"></div>
+            <div class="inner">
+            <div id="Hello"><h2>Hello Here Is Your TODO List !!!</h2></div>
+            <!-- <div id="Hello" ><h2>Your TODO List</h2></div> -->
+        
+
+                <ul id="unl">
+                    <li class="list" id="note" contenteditable="true" onkeyup="saveNote(this.id)"></li>
+                    <li class="list" id="note1" contenteditable="true" onkeyup="saveNote1(this.id)" ></li>
+                    <li class="list" id="note2" contenteditable="true" onkeyup="saveNote2(this.id)"></li>
+                    <li class="list" id="note3" contenteditable="true" onkeyup="saveNote3(this.id)"></li>
+                    <li class="list" id="note4" contenteditable="true" onkeyup="saveNote4(this.id)"></li>
+
+                            
+                </ul>
+                <div id="clearbutton"><a href="" class="box" onclick="localStorage.clear();">CLEAR</a></div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+<script>
+    getNote();
+    getNote1();
+    getNote2();
+    getNote3();
+    getNote4();
+</script>
+    </body>
+</html>
